@@ -1,0 +1,10 @@
+{
+  "appenders": [],
+
+  "levels": {
+    "rpc-log" : "ERROR",
+    "forward-log": "ERROR"
+  },
+
+  "replaceConsole": false
+}

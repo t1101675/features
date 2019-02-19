@@ -1,0 +1,133 @@
+Name: uniqid
+Version: 5.0.3
+License: MIT
+Private: false
+Description: Unique ID Generator
+Repository: git+https://github.com/adamhalasz/uniqid.git
+Homepage: http://github.com/adamhalasz/uniqid/
+Author: Halász Ádám <mail@adamhalasz.com> (http://adamhalasz.com/)
+
+---
+
+Name: axios
+Version: 0.18.0
+License: MIT
+Private: false
+Description: Promise based HTTP client for the browser and node.js
+Repository: git+https://github.com/axios/axios.git
+Homepage: https://github.com/axios/axios
+Author: Matt Zabriskie
+
+---
+
+Name: jsrsasign
+Version: 8.0.12
+License: MIT
+Private: false
+Description: opensource free pure JavaScript cryptographic library supports RSA/RSAPSS/ECDSA/DSA signing/validation, ASN.1, PKCS#1/5/8 private/public key, X.509 certificate, CRL, OCSP, CMS SignedData, TimeStamp and CAdES and JSON Web Signature(JWS)/Token(JWT)/Key(JWK).
+Repository: git+https://github.com/kjur/jsrsasign.git
+Homepage: https://github.com/kjur/jsrsasign#readme
+Author: Kenji Urushima
+
+---
+
+Name: bluebird
+Version: 3.5.2
+License: MIT
+Private: false
+Description: Full featured Promises/A+ implementation with exceptionally good performance
+Repository: git://github.com/petkaantonov/bluebird.git
+Homepage: https://github.com/petkaantonov/bluebird
+Author: Petka Antonov <petka_antonov@hotmail.com> (http://github.com/petkaantonov/)
+
+---
+
+Name: string-template
+Version: 1.0.0
+License: MIT
+Private: false
+Description: A simple string template function based on named or indexed arguments
+Repository: git://github.com/Matt-Esch/string-template.git
+Homepage: https://github.com/Matt-Esch/string-template
+Author: Matt-Esch <matt@mattesch.info>
+Contributors:
+  Matt-Esch
+
+---
+
+Name: process-es6
+Version: 0.11.6
+License: MIT
+Private: false
+Description: process information for node.js and browsers, but in es6
+Repository: git://github.com/calvinmetcalf/node-process-es6.git
+Homepage: https://github.com/calvinmetcalf/node-process-es6#readme
+Author: Roman Shtylman <shtylman@gmail.com>
+
+---
+
+Name: buffer-es6
+Version: 4.9.3
+License: MIT
+Private: false
+Description: Node.js Buffer API, for the browser
+Repository: git://github.com/calvinmetcalf/buffer-es6.git
+Homepage: https://github.com/calvinmetcalf/buffer-es6#readme
+Author: Feross Aboukhadijeh <feross@feross.org> (http://feross.org)
+Contributors:
+  Romain Beauxis <toots@rastageeks.org>
+  James Halliday <mail@substack.net>
+
+---
+
+Name: rollup-plugin-node-globals
+Version: 1.4.0
+License: MIT
+Private: false
+Description: insert the same globals browserify does
+Repository: git+ssh://git@github.com/calvinmetcalf/rollup-plugin-node-globals.git
+Homepage: https://github.com/calvinmetcalf/rollup-plugin-node-globals#readme
+Author: Calvin Metcalf <calvin.metcalf@gmail.com>
+
+---
+
+Name: is-buffer
+Version: 1.1.6
+License: MIT
+Private: false
+Description: Determine if an object is a Buffer
+Repository: git://github.com/feross/is-buffer.git
+Homepage: https://github.com/feross/is-buffer#readme
+Author: Feross Aboukhadijeh <feross@feross.org> (http://feross.org/)
+
+---
+
+Name: promise-file-reader
+Version: 1.0.2
+License: ISC
+Private: false
+Description: Wraps FileReader in a Promise
+Repository: git+https://github.com/jahredhope/promise-file-reader.git
+Homepage: https://github.com/jahredhope/promise-file-reader#readme
+Author: Jahred Hope <jahredhope@gmail.com>
+
+---
+
+Name: bound-points
+Version: 1.0.0
+License: MIT
+Private: false
+Description: Find a bounding box for a set of points
+Repository: git+https://github.com/mikolalysenko/bound-points.git
+Homepage: https://github.com/mikolalysenko/bound-points
+Author: Mikola Lysenko
+
+---
+
+Name: rollup-plugin-node-builtins
+Version: 2.1.2
+License: ISC
+Private: false
+Description: use node builtins in browser with rollup
+Repository: git+ssh://git@github.com/calvinmetcalf/rollup-plugin-node-builtins.git
+Homepage: https://github.com/calvinmetcalf/rollup-plugin-node-builtins#readme

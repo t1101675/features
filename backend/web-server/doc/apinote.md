@@ -1,0 +1,161 @@
+### Backend APIs
+
+- Token
+  - Token
+    - header中的authorization
+  - Token过期
+    - status: 401
+    - info_code: -1
+  - 没有Token
+    - status: 401
+    - info_code: -2
+- /api/login
+  - POST
+  - Send: username, password
+  - 用户不存在
+    - status: 200
+    - info_code: 1
+  - 密码错误
+    - status: 200
+    - info_code: 2
+  - 登录成功
+    - status: 200
+    - info_code: 0
+    - username, token, isact
+- /api/register
+  - POST
+  - Send: username, password, email
+  - 用户名已经存在
+    - status: 200
+    - info_code: 1
+  - 邮箱发送失败
+    - status: 200
+    - info_code: 2
+  - 邮箱已经存在
+    - status: 200
+    - info_code: 3
+  - 注册成功
+    - status: 200
+    - info_code: 0
+- /api/act
+  - POST
+  - Send: username, actcode
+  - 激活成功
+    - status: 200
+    - info_code: 0
+  - 激活码错误
+    - status: 200
+    - info_code: 1
+- /api/users
+  - GET
+  - Send: username
+  - check token first
+  - 不是管理员
+    - status: 404
+  - 成功
+    - status: 200
+    - userlist
+- /api/deluser
+  - POST
+  - Send: username, delusername
+  - check token first
+  - 不是管理员
+    - status: 404
+  - 成功
+    - status: 200
+    - info_code: 0
+- /api/game
+  - GET
+  - check token first
+  - Send: username
+  - 返回
+    - status: 200
+    - info_code: 0
+- /api/resetpw
+  - POST
+  - check token first
+  - Send: username, orgpw, newpw
+  - 原密码错误:
+    - Status: 200
+    - info_code: 1
+  - 修改成功
+    - status: 200
+    - info_code: 0
+- /api/reqpw
+  - POST
+  - Send: username
+  - 用户不存在
+    - status: 200
+    - info_code: 1
+  - 邮件发送失败
+    - status: 200
+    - info_code: 2
+  - 成功
+    - status: 200
+    - info_code: 0
+- /api/newpw
+  - POST
+  - Send: username, newpw, change_code
+  - 用户不存在
+    - status: 200
+    - info_code: 1
+  - 重置码错误
+    - Status: 200
+    - info_code: 2
+  - 修改成功
+    - status: 200
+    - info_code: 0
+- /api/setattr
+  - POST
+  - check token first
+  - Send: username, words
+  - 修改成功
+    - status: 200
+    - info_code: 0
+- /api/getattr
+  - POST
+  - check token first
+  - Send: username
+  - 返回
+    - status: 200
+    - info_code: 0
+    - words
+    - kills
+    - game_time
+    - deaths
+- /api/ranklist
+  - POST
+  - 返回
+    - status: 200
+    - info_code: 0
+    - ranklist
+- /api/upmusic
+  - POST
+  - Send: multipart/form-data(music), objectname and username are field
+  - 返回
+    - status: 200
+    - info_code: 0
+- /api/upphoto
+  - POST
+  - Send: multipart/form-data(photo), objectname and username are field
+  - 返回
+    - status: 200
+    - info_code: 0
+- /api/getfile
+  - POST
+  - Send: filetype | filename | fileuser
+  - 有这个文件
+    - status: 200
+    - 提供下载
+- /api/history
+  - GET
+  - 返回：
+    - status:200
+    - history: array
+- /api/getfilelist
+  - POST
+  - Send: filetype | filename | fileuser
+  - 返回
+    - status: 200
+    - info_code: 0
+    - filelist: a JSON

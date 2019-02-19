@@ -1,0 +1,99 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text mocha-webpack --webpack-config webpack.config.js --timeout 30000 --require test/setup.js test/*.spec.js"
+  },
+  "dependencies": {
+    "ava": "^0.25.0",
+    "axios": "^0.18.0",
+    "element-ui": "^2.4.8",
+    "express": "^4.16.4",
+    "express-static": "^1.2.6",
+    "hexi": "^0.8.1",
+    "jsonwebtoken": "^8.3.0",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "moment": "^2.22.2",
+    "node-sass": "^4.9.4",
+    "node-storage-shim": "^2.0.0",
+    "nyc": "^13.0.1",
+    "objectid-to-timestamp": "^1.3.0",
+    "pixi.js": "^4.8.2",
+    "pomelo": "^2.2.5",
+    "sass-loader": "^7.1.0",
+    "sha1": "^1.1.1",
+    "vue": "^2.5.17",
+    "vue-resource": "^1.5.1",
+    "vue-router": "^3.0.1",
+    "vue-social-share": "^0.0.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@vue/cli-plugin-babel": "^3.0.4",
+    "@vue/cli-plugin-eslint": "^3.0.4",
+    "@vue/cli-service": "^3.0.4",
+    "@vue/test-utils": "^1.0.0-beta.25",
+    "axios-mock-adapter": "^1.15.0",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-istanbul": "^5.1.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "expect": "^23.6.0",
+    "file-loader": "^2.0.0",
+    "flush-promises": "^1.0.2",
+    "jsdom": "^12.2.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^5.2.0",
+    "mocha-webpack": "^2.0.0-beta.0",
+    "node-storage-shim": "^2.0.0",
+    "nyc": "^13.1.0",
+    "regenerator-runtime": "^0.12.1",
+    "sinon": "^7.1.0",
+    "vue-loader": "^15.4.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.21.0",
+    "webpack-dev-server": "^3.1.9",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.vue",
+      "public/game/**/*.js"
+    ],
+    "instrument": false,
+    "sourceMap": false
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

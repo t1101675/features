@@ -1,0 +1,14 @@
+.DS_Store
+.gitignore
+.git/*
+.nyc_output/*
+coverage/*
+killnode.sh
+package-lock.json
+node_modules/*
+web-pomelo-server/package-lock.json
+web-pomelo-server/node_modules/*
+web-server/package-lock.json
+web-server/node_modules/*
+game-server/package-lock.json
+game-server/node_modules/*

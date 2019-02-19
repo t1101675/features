@@ -1,0 +1,15 @@
+.DS_Store
+killnode.sh
+.nyc_output/*
+coverage/*
+package-lock.json
+node_modules/*
+web-server/node_modules/*
+web-server/package-lock.json
+game-server/node_modules/*
+game-server/package-lock.json
+game-server/fix.lock
+game-server/app/servers/game/handler/wonderpainter.js
+front-server/*
+uploads/*
+web-server/uploads/*

@@ -1,0 +1,36 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "none",
+  "scripts": {
+    "start-web": "node web-server/server.js",
+    "test": "nyc --reporter=lcov --reporter=text mocha test/web/test.js test/game/pe.js test/game/ai.js test/game/gate.js test/game/room.js test/game/game.js test/game/room.js test/game/groom.js --timeout 20000",
+    "webtest": "nyc --reporter=lcov --reporter=text mocha test/web/test.js --timeout 10000",
+    "aitest": "nyc --reporter=lcov --reporter=text mocha test/game/ai.js --timeout 10000",
+    "gapptest": "nyc --reporter=lcov --reporter=text mocha test/game/app.js --timeout 10000",
+    "gatetest": "nyc --reporter=lcov --reporter=text mocha test/game/gate.js --timeout 10000",
+    "roomtest": "nyc --reporter=lcov --reporter=text mocha test/game/room.js --timeout 10000",
+    "petest": "nyc --reporter=lcov --reporter=text mocha test/game/pe.js --timeout 10000",
+    "gametest": "nyc --reporter=lcov --reporter=text mocha test/game/game.js --timeout 10000",
+    "grtest": "nyc --reporter=lcov --reporter=text mocha test/game/groom.js --timeout 10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.secoder.net:FEATURES/backend-demo.git"
+  },
+  "author": "FEATURES",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "jsonwebtoken": "^8.4.0",
+    "jwt-simple": "^0.5.5",
+    "koa-cors": "0.0.16",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "pomelo": "^2.2.5",
+    "should": "^13.2.3",
+    "uniqid": "^5.0.3"
+  }
+}

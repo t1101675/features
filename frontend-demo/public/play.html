@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WPJSSDK TEST</title>
+  <script src="./game/gameMain.js" type="module" crossorigin="anonymous"></script>
+  <script language="javascript" src="./scripts/pixi.min.js"></script>
+  <script language="javascript" src="./scripts/wonderpainter.js"></script>
+  <script language="javascript" src="./scripts/core.js"></script>
+  <script language="javascript" src="./scripts/modules.js"></script>
+
+</head>
+<body style="background: #eeeeee;" id = "body">
+  <script> var global = {gameOnly: true} </script>
+  <script type="module">
+    import {GameMain} from "./game/gameMain.js";
+    GameMain.start();
+  </script>
+  <div id="testdiv"></div>
+
+</body>
+</html>

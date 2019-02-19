@@ -1,0 +1,25 @@
+version: '3' # The docker-compose version
+
+services:
+
+  mongo: # db goes first for connection of server
+    image: "mongo"
+    ports:
+      - "27017:27017"
+
+  web-server:
+    build: ./web-server
+    ports:
+      - "8002:8002"
+    depends_on:
+      - "mongo"
+    command: ["./db_start_wait.sh", "mongo:27017", "--", "node", "server"]
+
+  game-server:
+    build: ./game-server
+    ports:
+      - "3005:3005"
+      - "3011:3011"
+      - "3015:3015"
+      - "3150:3150"
+      - "3251:3251"
